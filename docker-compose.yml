@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nginx:
+   image: mynginxserver:latest
+   ports:
+      - "80:80"
+
+  tomcat:
+    image: mytestserver:latest
+    ports:
+      - "8080:8080"
